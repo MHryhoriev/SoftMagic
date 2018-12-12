@@ -1,0 +1,75 @@
+.benefits {
+	@include section-padding(75px, 40px);
+	padding-left: 50px;
+	padding-right: 50px;
+
+	&-body {
+		@include flexbox();
+		justify-content: flex-end;
+	}
+
+	&-description,
+	&-video {
+		width: 45%;
+	}
+
+	&-video {
+		@include flexbox();
+		flex-direction: column;
+	}
+
+	&-title {
+		padding: 15px;
+		border-bottom: 1px solid $blue-color;
+		font-size: 15px;
+		font-weight: 700;
+		cursor: pointer;
+		color: #929292;
+
+		&:hover {
+			color: $blue-color;
+		}
+
+		&:after {
+			content: '\02795';
+			color: $orange-color;
+			float: right;
+		}
+
+		&.active {
+			color: $blue-color;
+		}
+		
+		&.active:after {
+			content: '\02796';
+		}
+	}
+
+	&-text {
+		padding: 15px;
+	}
+
+	&-link {
+		@include flexbox-align-center();
+		flex-direction: column;
+		margin-top: 75px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.benefits {
+		&-description,
+		&-video {
+			margin: auto;
+			width: 80%;
+		}
+
+		&-video {
+			margin-top: 30px;
+		}
+
+		&-body {
+			flex-direction: column;
+		}
+	}
+}

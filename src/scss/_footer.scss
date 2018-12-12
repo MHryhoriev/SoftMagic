@@ -1,0 +1,51 @@
+@import "mixins.scss";
+
+.footer {
+	@include section-padding(75px, 40px);
+/*   background: url(../img/footer-bg.jpg) no-repeat center center;
+box-shadow: inset 0 0 0 1000px rgba(7, 41, 64, .8);
+background-size: cover; */
+
+  &-panel {
+  	background-color: rgb(7, 41, 64);
+  	padding: 25px 0;
+  	color: $base-color;
+  }
+
+  &-copyright {
+  	text-align: center;
+    font-size: 10px;
+  }
+}
+
+.contacts {
+  &-list {
+    @include flexbox-align-center();
+    flex-flow: row wrap;
+  }
+
+  &-item {
+    @include flexbox-align-center();
+    margin: auto;
+  }
+
+  &-img {
+    width: 25px;
+  }
+
+  &-info {
+    color: rgb(7, 41, 64);
+    font-size: 25px;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and(max-width: 768px) {
+  .contacts-item:not(:first-child) {
+   margin-top: 20px;
+  }
+
+  .contacts-list {
+    flex-flow: column wrap;
+  }
+}

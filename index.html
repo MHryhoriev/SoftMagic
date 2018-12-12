@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SoftMagic</title>
+	<link rel="stylesheet" href="./app/css/styles.min.css">
+	<script src="app/js/jquery-3.3.1.min.js"></script>
+	<script src="app/js/jquery.validate.min.js"></script>
+	<meta name="viewport" content="width=device-width" />
+</head>
+<body>
+
+	<!-- HEADER SECTION -->
+
+	<section class="header" id="home">
+		<div class="header-panel">
+			<div class="container">
+				<div class="header-centering">
+					<div class="header-logo">
+						<a href="#" class="logo">
+							<img src="app/img/logo.png" alt="" class="logo-img">
+							<strong class="logo-title"><span class="orange-bg">Soft</span>Magic</strong>
+						</a>
+					</div>
+					<ul class="menu" id="menuNav">
+						<li class="menu-item">
+							<a href="#home" class="menu-link">Home</a>
+						</li>
+						<li class="menu-item">
+							<a href="#products" class="menu-link">Products</a>
+						</li>
+						<li class="menu-item">
+							<a href="#advantages" class="menu-link">Advantages</a>
+						</li>
+						<li class="menu-item">
+							<a href="#partners" class="menu-link">Partners</a>
+						</li>
+						<li class="menu-item">
+							<a href="#contactUs" class="menu-link">Contacts</a>
+						</li>
+					</ul>
+	
+					<label for="check-menu" class="burger" onclick="openMenu(this, 'menu-mobile')">
+					  <div class="burger-bar1"></div>
+					  <div class="burger-bar2"></div>
+					  <div class="burger-bar3"></div>
+					</label>
+				</div>
+			</div>
+	
+			<nav class="mobile-menu menu-hide" id="menu-mobile">
+						<ul class="mobile-menu-list">
+						  <li class="mobile-menu-item">
+						  	<a class="mobile-menu-link" href="#home">Home</a>
+						  </li>
+						  <li class="mobile-menu-item">
+						  	<a class="mobile-menu-link" href="#products">Products</a>
+						  </li>
+						  <li class="mobile-menu-item">
+						  	<a class="mobile-menu-link" href="#advantages">Advantages</a>
+						  </li>
+						  <li class="mobile-menu-item">
+						  	<a class="mobile-menu-link" href="#partners">Partners</a>
+						  </li>
+						  <li class="mobile-menu-item">
+						  	<a class="mobile-menu-link" href="#contactUs">Contacts</a>
+						  </li>
+						</ul>  
+				</nav>
+		</div>
+		<canvas class="background"></canvas>
+			<div class="container">
+				<div class="header-body animated pulse">
+					<h1 class="header-title">We will increase the efficiency of business management by 50% with the help of modern technologies.</h1>
+					<p class="header-text">Free technical support</p>
+					<!-- <a href="#" class="btn btn-big header-btn"><span>buy now</span></a> -->
+					<div id="arrow">
+						<a href="#products">
+						<img src="./app/img/double-arrow.svg" alt="Arrow" class="header-arrow" onclick="animateOnClick(this, 'bounce', 'animated')">
+					</a>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<!-- PRODUCTS SECTION -->
+
+	<section class="products" id="products">
+			<h1 class="section-title">our products</h1>
+			<p class="section-text">All our products are presented here.</p>
+			<hr class="hr hr-dark-blue">
+
+			<div class="product">
+				<div class="product-item wow fadeIn">
+					<img src="./app/img/communigate.jpg" alt="Communigate" class="product-img">
+					<img src="./app/img/communigate-mobile.jpg" alt="Communigate" class="product-img mobile">
+					<div class="overhead">
+						<h4 class="overhead-title">Communigate system</h4>
+						<p class="overhead-text">
+							How can I increase sales?<br>
+							How make my employee more effective? 
+							How keep my corporate information in safe?
+							We found the right quality solutio
+							<br><br>
+							Communigate is a complex «all in one place» solution that brings new opportunities to your business.
+							<br><br>
+							We will install, implement, customize, train your employee and support:
+							<br>- mail, chat, drive, and calls in one secure place;
+							<br>- all your info in safe at European top data-centers;
+							<br>- any question support;
+							<br>- for small and large enterprise;
+							<br>- full business automation;
+							<br>- third party services integration;
+							<br>- Apps in Android and IOS;
+							<br>- from 40 Euro per user;
+						</p>
+						<a href="#" class="btn overhead-btn">ask for quote</a>
+					</div>
+				</div>
+				<div class="product-item wow fadeIn">
+					<img src="./app/img/visidial.jpg" alt="Visidial" class="product-img">
+					<img src="./app/img/visidial-mobile.jpg" alt="Visidial" class="product-img mobile">
+					<div class="overhead">
+						<h4 class="overhead-title">Vicidial</h4>
+						<p class="overhead-text">
+							Become like IBM or Apple.<br>
+							Use our telephony for 100% and upgrade your sales department!
+							<br><br>
+							IP telephony solutions:
+							<br>- inbound and outbound calls;
+							<br>- all calls recordings;
+							<br>- own server at European top data-centers;
+							<br>- agent control;
+							<br>- wide range of reports and analytic included;
+							<br>- no need in buying own server;
+							<br>- Web application makes the solution cross-platformed;
+							<br>- any-question support;
+							<br>- installation, implementation, customization, training;
+							<br>- from 200 USD per month;
+							<br>- solution is used by millions business worldwide.
+						</p>
+						<a href="vicidial.html" class="btn overhead-btn">ask for quote</a>
+					</div>
+				</div>
+				<div class="product-item wow fadeIn">
+					<img src="./app/img/crm.jpg" alt="CRM" class="product-img">
+					<img src="./app/img/crm-mobile.jpg" alt="CRM" class="product-img mobile">
+					<div class="overhead">
+						<h4 class="overhead-title">CRM</h4>
+						<p class="overhead-text">
+							Use the full power of technologies in your business.
+							<br><br>
+							We will install, implement, migrate, customize, train your employee and support CRM and Helpdesks:
+							<br><br>
+							<br>- Sugar CRM, Vtiger;
+							<br>- GLPI Helpdesk;
+							<br>- Everything in cloud;
+							<br>- full support;
+							<br>- third-party services integration;
+							<br>- from only 200 USD per server per month.
+						</p>
+						<a href="#" class="btn overhead-btn">ask for quote</a>
+					</div>
+				</div>
+				<div class="product-item wow fadeIn">
+					<img src="./app/img/web-dev.jpg" alt="Web development" class="product-img">
+					<img src="./app/img/web-dev-mobile.jpg" alt="Web development" class="product-img mobile">
+					<div class="overhead">
+						<h4 class="overhead-title">Web development</h4>
+						<p class="overhead-text">
+							Got a good product but have no nice pack?
+							<br><br>
+							We will make for you a good website according to last trends and new technologies.
+							<br><br>
+							Nice selling Landing Pages, Apps and mini-quiz.
+							PHP and Java developers are also at your service. 
+						</p>
+						<a href="#" class="btn overhead-btn">ask for quote</a>
+					</div>
+				</div>
+				<div class="product-item wow fadeIn">
+					<img src="./app/img/smm.jpg" alt="SMM & CEO" class="product-img">
+					<img src="./app/img/smm-mobile.jpg" alt="SMM & CEO" class="product-img mobile">
+					<div class="overhead">
+						<h4 class="overhead-title">SMM & CEO</h4>
+						<p class="overhead-text">
+							Your clients are lost in internet?
+							<br><br>
+							We will find them for you by Google ads and SMM campaigns.
+						</p>
+						<a href="#" class="btn overhead-btn">ask for quote</a>
+					</div>
+				</div>
+				<div class="product-item wow fadeIn">
+					<img src="./app/img/os.jpg" alt="Linux Windows" class="product-img">
+					<img src="./app/img/os-mobile.jpg" alt="Linux Windows" class="product-img mobile">
+					<div class="overhead">
+						<h4 class="overhead-title">Linux & Windows</h4>
+						<p class="overhead-text">
+							Decrease the risks of your Business!
+							<br>
+							We will safe your information from externals and unfair employee.
+							<br><br>
+							Thin client service give you opportunities:
+							<br>- full control and management of the system from any place in the world;
+							<br>- secure your info at remote server that can be shut down and up by USB-drive and two clicks in any second;
+							<br>- user’s permissions control;
+							<br>- we support Linux, Windows based servers at top European data-centers. 
+						</p>
+						<a href="#" class="btn overhead-btn">ask for quote</a>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<!-- ADVANTAGES SECTION -->
+
+	<section class="advantages" id="advantages">
+		<div class="container">
+			<h1 class="section-title color-white wow fadeIn">Why choose us</h1>
+			<hr class="hr hr-white wow fadeIn">
+	
+			<div class="advantages-list">
+				<div class="advantages-item wow fadeIn">
+					<img src="./app/img/advantages2.svg" alt="Save money" class="advantages-img">
+					<h4 class="advantages-title">Save money</h4>
+					<p class="advantages-text">We will not only help you save money, but we will do everything possible so that you multiply them.</p>
+				</div>
+				<div class="advantages-item wow fadeIn">
+					<img src="./app/img/advantages3.svg" alt="Efficiency" class="advantages-img">
+					<h4 class="advantages-title">Efficiency</h4>
+					<p class="advantages-text">We solve your problems in a short time and with maximum efficiency. Our team of professionals will do everything possible to help you.</p>
+				</div>
+				<div class="advantages-item wow fadeIn">
+					<img src="./app/img/advantages4.svg" alt="Progression" class="advantages-img">
+					<h4 class="advantages-title">Progression</h4>
+					<p class="advantages-text">We will help you grow your business, we will help you make money and improve your work.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- VIDEO SECTION -->
+
+	<!-- <section class="video wow flipInY">
+		<img src="./app/img/play-button.svg" alt="Play" class="video-play-btn" id="play-btn" onclick="openWindow('playerWindow')">
+		<h3 class="video-title">SoftMagic video presentation</h3>
+		<p class="video-text">We will help solve all your problems with communication</p>
+		<div class="overlayer" id="playerWindow">
+			<span class="close">&times;</span>
+			<iframe class="video-player" id="player" src="https://www.youtube.com/embed/QcHyEWQbd90?" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</section> -->
+
+	<!-- CALL BACK SECTION -->
+
+	<section class="call-back wow fadeIn" id="contactUs">
+		<div class="container">
+			<h1 class="section-title">call back</h1>
+			<p class="section-text">If you have any questions, you can leave a request and our manager will contact you</p>
+			<hr class="hr hr-dark-blue">
+			<form class="form" method="POST" action="" id="formMain">
+				<div class="form-container">
+					<input type="text" class="form-item" name="name" placeholder="Name" id="name" autocomplete="off">
+				</div>
+				<div class="form-container">
+					<input type="text" class="form-item" name="phone" placeholder="Phone" id="phone" autocomplete="off">
+				</div>
+				<div class="form-container">
+					<input type="email" class="form-item" name="email" placeholder="Email" id="email" autocomplete="off">
+				</div>
+				<div class="form-container">
+					<input type="submit" class="form-btn" value="Call me" onclick="AjaxFormRequest('messegeResult', 'formMain', 'send.php')" id="button">
+				</div>
+			</form>
+			<div id="messegeResult" class="overlayer mail"></div>
+		</div>
+	</section>
+
+	<!-- PARTNER SECTION -->
+
+	<section class="partners" id="partners">
+		<div class="container">
+			<h1 class="section-title color-white">our partners</h1>
+			<p class="section-text color-white">Companies we work with for many years</p>
+			<hr class="hr hr-white">
+	
+			<ul class="partners-list wow zoomIn">
+				<li class="partners-item">
+					<img src="./app/img/partner4.png" alt="" class="partners-logo">
+				</li>
+				<li class="partners-item">
+					<img src="./app/img/partner3.png" alt="" class="partners-logo">
+				</li>
+				<li class="partners-item">
+					<img src="./app/img/partner5.png" alt="" class="partners-logo">
+				</li>
+				<li class="partners-item">
+					<img src="./app/img/partner2.png" alt="" class="partners-logo">
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- FOOTER SECTION -->
+
+	<section class="footer">
+		<div class="container">
+			<h1 class="section-title color-dark-blue">contacts</h1>
+			<hr class="hr hr-dark-blue">
+
+			<div class="contacts wow fadeIn">
+				<ul class="contacts-list flex-flow-rw">
+					<li class="contacts-item">
+						<img src="./app/img/phone-icon.svg" alt="Mobile phone" class="contacts-img">
+						<span class="contacts-info">+38 (067) 672-55-12</span>
+					</li>
+					<li class="contacts-item">
+						<img src="./app/img/email-icon.svg" alt="Email" class="contacts-img">
+						<span class="contacts-info">info@softmagic.pro</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer-panel">
+				<h4 class="footer-copyright">&#169; Copyright. All right reserved.</h4>
+	</footer>
+
+	<!-- Our js file -->
+	<script src="./app/js/scripts.min.js"></script>
+	<!-- Animation -->
+	<script src="./app/js/wow.min.js"></script>
+	<script>new WOW().init();</script>
+	<script src="./app/js/jquery.maskedinput.js"></script>
+	<script src="./app/js/particles.min.js"></script>
+</body>
+</html>

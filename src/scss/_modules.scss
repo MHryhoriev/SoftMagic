@@ -1,0 +1,95 @@
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.hr {
+	width: 150px;
+	margin-bottom: 40px;
+
+	&-dark-blue {
+	  border: 1px solid $blue-color;
+	}
+
+	&-white {
+	  border: 1px solid rgba(255, 255, 255, .8);
+	}
+
+	&-orange {
+		border: 1px solid $orange-color;
+	}
+}
+
+.bg-white {
+	background-color: $base-color;
+}
+
+.section {
+	&-title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  &-text {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+.color-white {
+	color: $base-color;
+}
+
+.color-dark-blue {
+	color: $blue-color;
+}
+
+.color-orange {
+	color: $orange-color;
+}
+
+.orange-bg {
+	background-color: $orange-color;
+}
+
+.dark-blue-bg {
+	background-color: $blue-color;
+}
+
+.btn {
+  color: $base-color;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid $base-color;
+
+  &-back {
+	padding: 10px;
+	font-size: 17px;
+	border-radius: 7px;
+	transition: all .25s ease-in-out;
+
+		&:hover {
+			background-color: #fff;
+			color: #072940;
+		}
+	}
+
+	&-benefits {
+		padding: 15px;
+		font-size: 25px;
+		border-radius: 7px;
+		border: 2px solid #072940;
+		transition: all .25s ease-out;
+
+		&:hover {
+			background-color: #fff;
+			color: #072940;
+		}
+	}
+}
+

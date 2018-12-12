@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vicidial</title>
+	<link rel="stylesheet" href="./app/css/styles.min.css">
+	<script src="app/js/jquery-3.3.1.min.js"></script>
+	<script src="app/js/jquery.validate.min.js"></script>
+	<meta name="viewport" content="width=device-width" />
+</head>
+<body>
+	<section class="header vici-bg" id="home">
+		<div class="header-panel">
+			<div class="container">
+				<div class="header-centering">
+					<div class="header-logo">
+						<a href="index.html" class="logo">
+							<img src="app/img/logo.png" alt="" class="logo-img">
+							<strong class="logo-title"><span class="orange-bg">Soft</span>Magic</strong>
+						</a>
+					</div>
+					<!-- <div class="back-menu">
+						<a href="index.html" class="btn btn-back">back</a>
+					</div> -->
+			</div>
+		</div>
+			<div class="container">
+				<div class="header-body">
+					<h1 class="header-title animated pulse"><span class="orange-bg">V</span>ICIDIAL</h1>
+					<p class="header-text">Become like IBM or Apple</p>
+					<div class="diamond"><a href="index.html" class="diamond-link">&#8598;</a></div>
+				</div>
+			</div>
+	</section>
+
+	<section class="benefits">
+			<h1 class="section-title">our benefits</h1>
+			<p class="section-text">Why choose us and what we can give you</p>
+			<hr class="hr hr-orange">
+
+			<div class="benefits-body">
+				<div class="benefits-description">
+					<h3 class="benefits-title">VICIdial is used in many different industries and organizations</h3>
+					<p class="benefits-text">You can find VICIdial in use at thousands of different companies and organizations all over the world. From a bank in Japan to a social club in the United States, all sorts of organizations trust VICIdial to communicate with their customers and members. Here is a small list of how organizations are using VICIdial on a daily basis to help...
+					</p>
+					<h3 class="benefits-title">VICIdial is the Most Popular Open-Source Contact Center</h3>
+					<p class="benefits-text">VICIdial is the most popular Open-Source Contact Center Solution in the world. With over 14,000 installations in over 100 countries around the world. The agent screen is available in 16 different languages, with options to easily create your own custom translations as well. We have clients running VICIdial at call centers from 5 to 500 agents, handling over a million...</p>
+
+					<h3 class="benefits-title ">Inbound Calls, Outbound Calls, Email and Customer Website Chat</h3>
+					<p class="benefits-text">Let your agents handle inbound and outbound phone calls as well as inbound email and customer website chat all together in the same web-based agent interface. With Skills-based routing and Queue Prioritization, you can have calls and emails go to the agents that can handle them the most efficiently. You can also have those agents handling outbound calls when the...</p>
+
+					<h3 class="benefits-title ">VICIdial Dedicated Hosting</h3>
+					<p class="benefits-text">You get your own physical servers in one of our hosting facilities. We have hundreds of servers in our private hosted clusters that we maintain just for our hosted call center services. We only use Tier-3 datacenters with multiple internet backbone connections and redundant power solutions, so you know your service is going to work. For more information about VICIhost...</p>
+			</div>
+				<div class="benefits-video">
+					<img src="./app/img/play-button.svg" alt="Play" class="video-play-btn" id="play-btn" onclick="openWindow('playerWindow')">
+					<h3 class="video-title">Vicidial video presentation</h3>
+					<div class="overlayer" id="playerWindow">
+						<iframe class="video-player" id="player" src="https://www.youtube.com/embed/ipGd-WYbdDo?" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+		</div>
+		
+		<div class="benefits-link">
+			<p class="section-text">If you want to know more, click on the button...</p>
+			<a href="https://vici.softmagic.pro/" class="btn btn-benefits dark-blue-bg">more info</a>
+		</div>
+	</section>
+
+	<!-- PARTNER SECTION -->
+
+	<section class="partners" id="partners">
+		<div class="container">
+			<h1 class="section-title color-white">our partners</h1>
+			<p class="section-text color-white">Companies we work with for many years</p>
+			<hr class="hr hr-orange">
+	
+			<ul class="partners-list wow zoomIn">
+				<li class="partners-item">
+					<img src="./app/img/partner4.png" alt="" class="partners-logo">
+				</li>
+				<li class="partners-item">
+					<img src="./app/img/partner3.png" alt="" class="partners-logo">
+				</li>
+				<li class="partners-item">
+					<img src="./app/img/partner5.png" alt="" class="partners-logo">
+				</li>
+				<li class="partners-item">
+					<img src="./app/img/partner2.png" alt="" class="partners-logo">
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- CALL BACK SECTION -->
+
+	<section class="call-back wow fadeIn" id="contactUs">
+		<div class="container">
+			<h1 class="section-title">call back</h1>
+			<p class="section-text">If you have any questions, you can leave a request and our manager will contact you</p>
+			<hr class="hr hr-orange">
+			<form class="form" method="POST" action="" id="formMain">
+				<div class="form-container">
+					<input type="text" class="form-item" name="name" placeholder="Name" id="name" autocomplete="off">
+				</div>
+				<div class="form-container">
+					<input type="text" class="form-item" name="phone" placeholder="Phone" id="phone" autocomplete="off">
+				</div>
+				<div class="form-container">
+					<input type="email" class="form-item" name="email" placeholder="Email" id="email" autocomplete="off">
+				</div>
+				<div class="form-container">
+					<input type="submit" class="form-btn" value="Call me" onclick="AjaxFormRequest('messegeResult', 'formMain', 'send.php')" id="button">
+				</div>
+			</form>
+			<div id="messegeResult" class="overlayer mail"></div>
+		</div>
+	</section>
+
+	<footer class="footer-panel">
+				<h4 class="footer-copyright">&#169; Copyright. All right reserved.</h4>
+	</footer>
+
+	<!-- Our js file -->
+	<script src="./app/js/scripts.min.js"></script>
+	<!-- Animation -->
+	<script src="./app/js/wow.min.js"></script>
+	<script>new WOW().init();</script>
+	<script src="./app/js/jquery.maskedinput.js"></script>
+	<script src="./app/js/particles.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+$base-color: #fff;
+$orange-color: #f36c00;
+$blue-color: #072940;
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flexbox-align-center() {
+	display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+
+@mixin section-padding($max, $min) {
+  padding: $max 0;
+
+  @media only screen and (max-width: 780px) {
+    padding: $min 0;
+  }
+}
+
+@mixin section-padding-side($value) {
+  padding: 0 $value;
+}
+
+@mixin media-font-size($supermax, $max, $mid, $min, $micro) {
+  font-size: $supermax;
+
+  @media only screen and (max-width: 1200px) {
+    font-size: $max;
+  }
+
+  @media only screen and (max-width: 940px) {
+    font-size: $mid;
+  }
+
+  @media only screen and (max-width: 780px) {
+    font-size: $min;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: $micro;
+  }
+}
