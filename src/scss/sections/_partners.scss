@@ -6,14 +6,11 @@
   &-list {
     @include flexbox-align-center();
     flex-flow: row wrap;
+    margin: auto;
+    width: 70%;
   }
 
-  &-item {
-  	width: 150px;
-  	margin: 30px auto 0;
-  }
-
-  &-logo {
+  &-img {
   	width: 100%;
   }
 }
@@ -22,5 +19,9 @@
   .partners {
     background: url(../img/partners-bg-mobile.jpg) no-repeat center center;
     background-size: cover;
+
+    &-list {
+      width: 90%;
+    }
   }
 }

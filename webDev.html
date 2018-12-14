@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Web Development</title>
+	<link rel="stylesheet" href="./app/css/styles.min.css">
+	<script src="app/js/jquery-3.3.1.min.js"></script>
+	<script src="app/js/jquery.validate.min.js"></script>
+	<meta name="viewport" content="width=device-width" />
+</head>
+<body>
+	<section class="header web-dev-bg" id="home">
+		<div class="header-panel">
+			<div class="container">
+				<div class="header-centering">
+					<div class="header-logo">
+						<a href="index.html" class="logo">
+							<img src="app/img/logo.png" alt="" class="logo-img">
+							<strong class="logo-title"><span class="orange-bg">Soft</span>Magic</strong>
+						</a>
+					</div>
+					<!-- <div class="back-menu">
+						<a href="index.html" class="btn btn-back">back</a>
+					</div> -->
+			</div>
+		</div>
+			<div class="container">
+				<div class="header-body">
+					<h1 class="header-title animated shake"><span class="orange-bg">W</span>eb Development</h1>
+					<p class="header-text color-orange animated shake">Creating a website is easy</p>
+					<div class="diamond"><a href="index.html" class="diamond-link">&#8598;</a></div>
+				</div>
+			</div>
+	</section>
+
+	<section class="benefits wow fadeIn">
+			<h1 class="section-title">our benefits</h1>
+			<p class="section-text">Why choose us and what we can give you</p>
+			<hr class="hr hr-orange">
+
+			<div class="benefits-body">
+				<div class="benefits-description">
+					<h3 class="benefits-title">Quit Cursing Your CRM</h3>
+					<p class="benefits-text">Sugar & Vtiger is a complete CRM products that collects critical information across sales, service and marketing. It's lean, fast and integrates with anything. Modern design works seamlessly on the devices you use everyday. That's why more are ditching legacy systems and choosing these CRMs to build better business relationships...
+					</p>
+					<h3 class="benefits-title">CRM for Sales</h3>
+					<p class="benefits-text">Increase win rates with rich customer insight and collaborative selling tools. Maximize your productivity with a sales CRM platform that promotes best practices. Drive best practices with powerful process automation that aligns with your sales playbook. Prioritize your sales pipeline with personalized dashboards and personal productivity tools...</p>
+
+					<h3 class="benefits-title">CRM for Customer Service</h3>
+					<p class="benefits-text">Provide exceptional service and support by using CRM for rapid customer insight and real-time collaboration. With their customer service CRM, understand and meet customer needs, whether from a help desk, a call center, or a social media community...</p>
+
+					<h3 class="benefits-title">CRM for Marketing</h3>
+					<p class="benefits-text">Optimize future marketing efforts by clearly capturing and understanding the return on your marketing spend. Attract more prospects and create more opportunities with less effort. Use these CRM for marketing and understand your customers like never before through more relevant, timely outreach and more actionable insights. Create campaigns that stand out from the pack, without breaking the bank...</p>
+
+					<h3 class="benefits-title">CRM for IT</h3>
+					<p class="benefits-text">These CRM delivers the flexibility, agility, and simplicity to make it your own. Automate complex business processes. Rapidly develop and deliver a solution that is custom-built for your organization...</p>
+			</div>
+				<div class="benefits-video">
+					<img src="./app/img/play-button.svg" alt="Play" class="video-play-btn" id="play-btn" onclick="openWindow('playerWindow')">
+					<h3 class="video-title">CRM video presentation</h3>
+					<div class="overlayer" id="playerWindow">
+						<iframe class="video-player" id="player" src="https://www.youtube.com/embed/HESPT0SedEc?" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+		</div>
+	</section>
+
+	<!-- CALL BACK SECTION -->
+
+	<section class="call-back wow fadeIn tilt-block" id="contactUs">
+		<div class="container">
+			<h1 class="section-title">call back</h1>
+			<p class="section-text">If you have any questions, you can leave a request and our manager will contact you</p>
+			<hr class="hr hr-white">
+			<form class="form" method="POST" action="" id="formMain">
+				<div class="form-container">
+					<input type="text" class="form-item" name="name" placeholder="Name" id="name" autocomplete="off">
+				</div>
+				<div class="form-container">
+					<input type="text" class="form-item" name="phone" placeholder="Phone" id="phone" autocomplete="off">
+				</div>
+				<div class="form-container">
+					<input type="email" class="form-item" name="email" placeholder="Email" id="email" autocomplete="off">
+				</div>
+				<div class="form-container">
+					<input type="submit" class="form-btn" value="Call me" onclick="AjaxFormRequest('messegeResult', 'formMain', 'send.php')" id="button">
+				</div>
+			</form>
+			<div id="messegeResult" class="overlayer mail"></div>
+		</div>
+	</section>
+
+	<footer class="footer-panel">
+				<h4 class="footer-copyright">&#169; Copyright. All right reserved.</h4>
+	</footer>
+
+	<!-- Our js file -->
+	<script src="./app/js/scripts.min.js"></script>
+	<!-- Animation -->
+	<script src="./app/js/wow.min.js"></script>
+	<script>new WOW().init();</script>
+	<script src="./app/js/jquery.maskedinput.js"></script>
+	<script src="./app/js/particles.min.js"></script>
+</body>
+</html>

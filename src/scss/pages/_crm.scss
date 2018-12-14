@@ -1,0 +1,11 @@
+.crm-bg {
+	background: url(../img/crm.jpg) no-repeat 50% 25%;
+	box-shadow: inset 0 0 0 1000px rgba(7, 41, 64, .8);
+	background-size: cover;
+}
+
+@media only screen and(max-width: 768px) {
+  .crm-bg {
+    background: url(../img/crm-mobile.jpg) no-repeat 50% 25%;
+  }
+}

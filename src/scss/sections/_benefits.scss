@@ -1,5 +1,5 @@
 .benefits {
-	@include section-padding(75px, 40px);
+	@include section-padding(75px, 50px);
 	padding-left: 50px;
 	padding-right: 50px;
 
@@ -38,6 +38,7 @@
 
 		&.active {
 			color: $blue-color;
+			border-bottom: 1px solid $orange-color;
 		}
 		
 		&.active:after {

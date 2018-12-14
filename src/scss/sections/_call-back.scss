@@ -19,16 +19,17 @@
 	}
 
 	&-item {
-		width: 85%;
+		width: 95%;
 	}
 
 	&-item,
 	&-btn {
+		text-align: center;
 		margin-top: 15px;
-		padding: 15px;
+		padding: 15px 0;
 		font-size: 20px;
-		border: 1px solid rgba(7, 41, 64, .4);
-		border-radius: 6px;
+		border: 1px solid $blue-color;
+		border-radius: 25px;
 		outline: none;
 		transition: all .30s ease-in-out;
 
@@ -37,11 +38,8 @@
 		}
 
 		&:focus {
-			border-color: rgb(7, 41, 64);
+			border-color: $orange-color;
 			transition: all .30s ease-in-out;
-			-webkit-box-shadow: 10px 10px 33px 2px rgba(0,0,0,0.54);
-			-moz-box-shadow: 10px 10px 33px 2px rgba(0,0,0,0.54);
-			box-shadow: 10px 10px 33px 2px rgba(0,0,0,0.54);
 		}
 	}
 
@@ -49,12 +47,15 @@
 		width: 100%;
 		color: $base-color;
 		font-size: 25px;
-		background-color: rgb(7, 41, 64);
-		padding: 12px;
+		background-color: $blue-color;
+		padding: 11px;
 		cursor: pointer;
+		border: 2px solid $blue-color;
+		transition: all .25s ease-out;
 
 		&:hover {
-			opacity: .8;
+			background-color: $orange-color;
+			color: $blue-color;
 		}
 	}
 }
@@ -66,7 +67,7 @@
   	}
 
   	&-item {
-  		width: 93%;
+  		width: 100%;
   	}
 
   	&-btn {

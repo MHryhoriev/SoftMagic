@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SMM & CEO</title>
+	<link rel="stylesheet" href="./app/css/styles.min.css">
+	<script src="app/js/jquery-3.3.1.min.js"></script>
+	<script src="app/js/jquery.validate.min.js"></script>
+	<meta name="viewport" content="width=device-width" />
+</head>
+<body>
+	<section class="header crm-bg" id="home">
+		<div class="header-panel">
+			<div class="container">
+				<div class="header-centering">
+					<div class="header-logo">
+						<a href="index.html" class="logo">
+							<img src="app/img/logo.png" alt="" class="logo-img">
+							<strong class="logo-title"><span class="orange-bg">Soft</span>Magic</strong>
+						</a>
+					</div>
+					<!-- <div class="back-menu">
+						<a href="index.html" class="btn btn-back">back</a>
+					</div> -->
+			</div>
+		</div>
+			<div class="container">
+				<div class="header-body">
+					<h1 class="header-title animated shake"><span class="orange-bg">S</span>MM</h1>
+					<p class="header-text color-orange animated shake">To the top it remains to do just a step</p>
+					<div class="diamond"><a href="index.html" class="diamond-link">&#8598;</a></div>
+				</div>
+			</div>
+	</section>
+
+	<section class="benefits wow fadeIn">
+			<h1 class="section-title">our benefits</h1>
+			<p class="section-text">Why choose us and what we can give you</p>
+			<hr class="hr hr-orange">
+
+			<div class="benefits-body">
+				<div class="benefits-description">
+					<h3 class="benefits-title">Analyze your social channels & benchmark their performance</h3>
+					<p class="benefits-text">Turn your social media data into actionable insights for every team in your marketing department. Analyze your audience to build a better strategy, your content to create better designs, and your advertising performance to improve ad costs. Benchmark your organic and paid social media, videos performance, and track Facebook Live videos for any Page...
+					</p>
+					<h3 class="benefits-title">Optimize your social media performance</h3>
+					<p class="benefits-text">Manage social media accounts smarter by using AI to discover what posts to promote, when to publish them, and which audience segments to target. Optimize your budget and deliver content that resonates with your audiences better...</p>
+
+					<h3 class="benefits-title">Manage social media publishing across your teams</h3>
+					<p class="benefits-text">Reduce the time it takes to plan and execute your strategy. Post to all your social media channels from one simple interface and manage your content across multiple profiles in one collaborative calendar. Gain a clear oversight of what’s been published, what’s coming up next, and what still needs to be approved - on desktop or on mobile for when you’re on the move...</p>
+
+					<h3 class="benefits-title">Simplify influencer management with automation</h3>
+					<p class="benefits-text">Automate how you work with influencers. Choose influencers that are most compatible with your audience based on AI recommendations. Easily gauge their engagement and track their KPIs when managing your social media influencer campaigns...</p>
+
+					<h3 class="benefits-title">Measure ROI and manage your ad spend</h3>
+					<p class="benefits-text">Calculate ROI by attributing your digital and social activity to business goals. Create customized dashboards and reports to visualize your impact on the business. Give context to your advertising spend - see how it measures up against your industry, country or region...</p>
+
+					<h3 class="benefits-title">Flexible internal and agency collaboration</h3>
+					<p class="benefits-text">Have your team work as one and bring your social media efforts together. Easily assign tasks, approve posts on desktop or on mobile and manage a cross-platform content calendar across teams and departments. Stay on top of your community management, respond faster, and ensure all customer queries are answered on time...</p>
+			</div>
+				<div class="benefits-video">
+					<img src="./app/img/play-button.svg" alt="Play" class="video-play-btn" id="play-btn" onclick="openWindow('playerWindow')">
+					<h3 class="video-title">SMM video presentation</h3>
+					<div class="overlayer" id="playerWindow">
+						<iframe class="video-player" id="player" src="https://www.youtube.com/embed/_LSol7zvkGI?" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+		</div>
+		
+		<div class="benefits-link">
+			<p class="section-text">If you want to know more, click on the button...</p>
+			<a href="#" class="btn btn-benefits dark-blue-bg">more info</a>
+		</div>
+	</section>
+
+	<!-- CALL BACK SECTION -->
+
+	<section class="call-back wow fadeIn tilt-block" id="contactUs">
+		<div class="container">
+			<h1 class="section-title">call back</h1>
+			<p class="section-text">If you have any questions, you can leave a request and our manager will contact you</p>
+			<hr class="hr hr-white">
+			<form class="form" method="POST" action="" id="formMain">
+				<div class="form-container">
+					<input type="text" class="form-item" name="name" placeholder="Name" id="name" autocomplete="off">
+				</div>
+				<div class="form-container">
+					<input type="text" class="form-item" name="phone" placeholder="Phone" id="phone" autocomplete="off">
+				</div>
+				<div class="form-container">
+					<input type="email" class="form-item" name="email" placeholder="Email" id="email" autocomplete="off">
+				</div>
+				<div class="form-container">
+					<input type="submit" class="form-btn" value="Call me" onclick="AjaxFormRequest('messegeResult', 'formMain', 'send.php')" id="button">
+				</div>
+			</form>
+			<div id="messegeResult" class="overlayer mail"></div>
+		</div>
+	</section>
+
+	<footer class="footer-panel">
+				<h4 class="footer-copyright">&#169; Copyright. All right reserved.</h4>
+	</footer>
+
+	<!-- Our js file -->
+	<script src="./app/js/scripts.min.js"></script>
+	<!-- Animation -->
+	<script src="./app/js/wow.min.js"></script>
+	<script>new WOW().init();</script>
+	<script src="./app/js/jquery.maskedinput.js"></script>
+	<script src="./app/js/particles.min.js"></script>
+</body>
+</html>

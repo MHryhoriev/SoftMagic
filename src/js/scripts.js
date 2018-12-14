@@ -41,12 +41,16 @@ function animateOnClick(elem, type, animation) {
 
 $(document).mouseup(function(elem) {
 	var close = $(".close");
-	var overlayer = $('.overlayer');
-	var mail = $('.mail');
+	var overlayer = $(".overlayer");
+	var mail = $(".mail");
 
 	if (elem.target != close[0] && close.has(elem.target).length === 0) {
 		if (overlayer) {
 			overlayer.fadeOut();
+			var player = $("#player").prop("src");
+			player = player.replace("&autoplay=1", "");
+			$("#player").prop("src", "");
+			$("#player").prop("src", player);
 		}
 
 		if (mail) {
@@ -67,6 +71,7 @@ $(document).on("click", "#play-btn", function() {
 	var video = $("#player");
 	var src = video.attr("src");
 	video.attr("src", src + "&autoplay=1");
+	
 });
 
 $(document).ready(function() {

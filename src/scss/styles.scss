@@ -1,18 +1,28 @@
-@import "header";
+/* SECTIONS */
+@import "sections/header";
+@import "sections/products";
+@import "sections/video";
+@import "sections/partners";
+@import "sections/advantages";
+@import "sections/footer";
+@import "sections/call-back";
+@import "sections/benefits";
+
+/* PAGES */
+@import "pages/vicidial";
+@import "pages/communigate";
+@import "pages/crm";
+@import "pages/web-dev";
+@import "pages/os-install";
+@import "pages/smm";
+
+/* OTHER */
 @import "mobile-menu";
 @import "modules";
-@import "products";
 @import "reset";
-@import "video";
-@import "partners";
-@import "advantages";
 @import "animation";
 @import "overlayer";
-@import "footer";
-@import "call-back";
 @import "mixins";
-@import "vicidial";
-@import "benefits";
 
 body {
   font-family: ProximaNova, 'sans-serif';
