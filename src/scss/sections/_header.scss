@@ -1,9 +1,7 @@
-@import "mixins";
+@import "../modules/mixins";
 
 .header {
   position: relative;
-  /* background: url(../img/header-bg.jpg) no-repeat center center fixed;
-  background-size: cover; */
   position: relative;
   background-color: rgb(7, 41, 64);
   color: $base-color;
@@ -14,11 +12,11 @@
   }
 
   &-logo {
-    z-index: 2;
+    z-index: 1;
   }
 
   &-body {
-    z-index: 2;
+    z-index: 1;
     @include flexbox-align-center();
     flex-direction: column;
     margin-top: 75px;
@@ -63,39 +61,6 @@
   margin-top: 150px;
 }
 
-.menu {
-  z-index: 2;
-  @include flexbox();
-  justify-content: space-between;
-  width: 40%;
-  font-size: 18px;
-  font-weight: 700;
-
-  &-link {
-    color: $base-color;
-
-    &:after {
-      @include flexbox();
-      content: "";
-      height: 2px;
-      width: 0%;
-      margin-left: 50%;
-      background-color: $base-color;
-      -webkit-transition: width .3s ease-in-out;
-      -moz--transition: width .3s ease-in-out;
-      transition: width .3s ease-in-out;
-      -webkit-transform:translateX(-50%);
-      -moz-transform:translateX(-50%);
-      transform:translateX(-50%);
-    }
-    
-    &:hover:after,
-    &:focus:after {
-      width: 100%;
-    }
-  }
-}
-
 .background {
   position: absolute;
   top: 0;
@@ -105,37 +70,11 @@
   z-index: 0;
 }
 
-.diamond {
-  z-index: 1;
-  cursor: pointer;
-  background-color: $blue-color;
-  position: absolute;
-  border: 1px solid $blue-color;
-  padding: 8px 11px;
-  bottom: -7.5%;
-  transform: rotate(45deg);
-
-  &:hover {
-    background-color: $orange-color;
-    border: 1px solid $blue-color;
-  }
-
-  &:hover &-link {
-    color: $blue-color;
-  }
-
-  &-link {
-    font-size: 38px;
-    color: $base-color;
-    outline: none;
-  }
-}
-
 .logo {
   @include flexbox-align-center();
 
   &-title {
-    z-index: 2;
+    z-index: 1;
     color: $base-color;
     font-size: 36px;
     font-weight: 700;
@@ -148,10 +87,6 @@
 }
 
 @media only screen and (max-width: 940px) {
-  .menu {
-    display: none;
-  }
-
   .header {
     &-title {
       font-size: 50px;
@@ -186,9 +121,5 @@
     &-img {
       width: 35px;
     }
-  }
-
-  .diamond {
-    bottom: -9.5%;
   }
 }

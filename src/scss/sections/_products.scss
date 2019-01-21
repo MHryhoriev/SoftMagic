@@ -28,7 +28,6 @@
 
     &:hover .overhead-title {
       transition: all .25s ease-in-out;
-/*       margin-top: 20px; */
     }
   }
 
@@ -58,7 +57,7 @@
     padding-top: 2%;
     font-size: 30px;
     font-weight: 700;
-    @include media-font-size(30px, 25px, 25px, 20px, 15px);
+    @include media-font-size(30px, 25px, 20px, 20px, 15px);
   }
 
   &-btn {
@@ -72,7 +71,7 @@
   &-text {
     visibility: hidden;
     width: 85%;
-    @include media-font-size(20px, 11px, 10px, 9px, 8px);
+    @include media-font-size(15px, 12px, 9px, 12px, 8px);
     text-align: center;
     color: $base-color;
     opacity: 0;

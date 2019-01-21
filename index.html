@@ -3,13 +3,59 @@
 <head>
 	<meta charset="UTF-8">
 	<title>SoftMagic</title>
+	<link rel="stylesheet" href="./app/css/intlTelInput.css">
 	<link rel="stylesheet" href="./app/css/styles.min.css">
-	<script src="app/js/jquery-3.3.1.min.js"></script>
-	<script src="app/js/jquery.validate.min.js"></script>
+	<link rel="shortcut icon" href="../app/img/logo.png" type="image/png">
+	<script src="./app/js/jquery-3.3.1.min.js"></script>
+	<script src="./app/js/jquery.validate.min.js"></script>
 	<meta name="viewport" content="width=device-width" />
+	<meta http-equiv="Content-type" content="text/html; charset-utf-8" />
+	<meta name="keywords" content="telephony automation, business automation, information protection, commercial information, telephony, thin client, licensed software setup, commigate, CRM, Visidial, Vicidial, Communigate, ERP, SMM, Website, Mini-Quizz, remote server, virtual server" />
+
+	<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window,document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '357842338107941');
+		fbq('track', 'PageView');
+	</script>
+	<noscript>
+	 	<img height="1" width="1" src="https://www.facebook.com/tr?id=357842338107941&ev=PageView
+	&noscript=1"/>
+	</noscript>
 </head>
 <body>
 
+	<div class="label wow fadeIn" onclick="show(this, '.consultation')">
+		<h4 class="label-title">Consultation</h4>
+		<img src="app/img/headset.svg" alt="consultation" class="label-img">
+	</div>
+
+	<div class="consultation wow fadeIn">
+		<img src="app/img/close-btn.svg" alt="close" class="consultation-close" onclick="hide('.consultation', '.label')">
+		<h4 class="consultation-title">Get advice from our specialist for free</h4>
+		<h4 class="consultation-stock"><span>Stock!</span> <br> Test for 7 days for free <br>up to 5 users</h4>
+		<hr class="hr hr-orange">
+		<form class="form" method="POST" action="" id="formConsultation">
+				<div class="form-container">
+					<input type="text" class="form-item" name="name" placeholder="Name" id="name" autocomplete="off">
+				</div>
+				<div class="form-container">
+					<input type="tel" class="form-item" name="phone" id="phone" autocomplete="off">
+				</div>
+				<div class="form-container">
+					<input type="email" class="form-item" name="email" placeholder="Email" id="email" autocomplete="off">
+				</div>
+				<div class="form-container">
+					<input type="submit" class="form-btn" value="Call me" onclick="AjaxFormRequest('formConsultation', 'consultation.php')" id="button">
+				</div>
+			</form>
+	</div>
 	<!-- HEADER SECTION -->
 
 	<section class="header" id="home">
@@ -17,57 +63,33 @@
 			<div class="container">
 				<div class="header-centering">
 					<div class="header-logo">
-						<a href="#" class="logo">
-							<img src="app/img/logo.png" alt="" class="logo-img">
+						<a href="/" class="logo">
+							<img src="./app/img/logo.png" alt="logo" class="logo-img">
 							<strong class="logo-title"><span class="orange-bg">Soft</span>Magic</strong>
 						</a>
 					</div>
-					<ul class="menu" id="menuNav">
-						<li class="menu-item">
-							<a href="#home" class="menu-link">Home</a>
-						</li>
-						<li class="menu-item">
-							<a href="#products" class="menu-link">Products</a>
-						</li>
-						<li class="menu-item">
-							<a href="#advantages" class="menu-link">Advantages</a>
-						</li>
-						<li class="menu-item">
-							<a href="#contacts" class="menu-link">Contacts</a>
-						</li>
-					</ul>
-	
-					<label for="check-menu" class="burger" onclick="openMenu(this, 'menu-mobile')">
-					  <div class="burger-bar1"></div>
-					  <div class="burger-bar2"></div>
-					  <div class="burger-bar3"></div>
-					</label>
+					<div class="controlls">
+<!-- 						<div class="news">
+	<a href="/en/" class="news-link">
+		<img src="./app/img/rss.svg" alt="News" class="news-icon">
+	</a>
+</div> -->
+						<div class="langs">
+							<a href="/" class="lang-item">en</a>
+							<span>/</span>
+							<a href="/ru/" class="lang-item">ru</a>
+						</div>
+					</div>
 				</div>
 			</div>
 	
-			<nav class="mobile-menu menu-hide" id="menu-mobile">
-						<ul class="mobile-menu-list">
-						  <li class="mobile-menu-item">
-						  	<a class="mobile-menu-link" href="#home">Home</a>
-						  </li>
-						  <li class="mobile-menu-item">
-						  	<a class="mobile-menu-link" href="#products">Products</a>
-						  </li>
-						  <li class="mobile-menu-item">
-						  	<a class="mobile-menu-link" href="#advantages">Advantages</a>
-						  </li>
-						  <li class="mobile-menu-item">
-						  	<a class="mobile-menu-link" href="#contacts">Contacts</a>
-						  </li>
-						</ul>  
-				</nav>
+
 		</div>
 		<canvas class="background"></canvas>
 			<div class="container">
 				<div class="header-body animated pulse">
-					<h1 class="header-title">We will increase the efficiency of business management by 50% with the help of modern technologies</h1>
+					<h1 class="header-title"><span class="orange-bg">W</span>e will increase the efficiency of business management by 50% with the help of modern technologies</h1>
 					<p class="header-text color-orange">Free technical support</p>
-					<!-- <a href="#" class="btn btn-big header-btn"><span>buy now</span></a> -->
 					<div id="arrow">
 						<a href="#products">
 						<img src="./app/img/double-arrow.svg" alt="Arrow" class="header-arrow" onclick="animateOnClick(this, 'bounce', 'animated')">
@@ -108,7 +130,7 @@
 							<br>- Apps in Android and IOS;
 							<br>- from 40 Euro per user;
 						</p>
-						<a href="communigate.html" class="btn overhead-btn">ask for quote</a>
+						<a href="en/communigate.html" class="btn overhead-btn">ask for quote</a>
 					</div>
 				</div>
 				<div class="product-item wow fadeIn">
@@ -133,7 +155,7 @@
 							<br>- from 200 USD per month;
 							<br>- solution is used by millions business worldwide.
 						</p>
-						<a href="vicidial.html" class="btn overhead-btn">ask for quote</a>
+						<a href="en/vicidial.html" class="btn overhead-btn">ask for quote</a>
 					</div>
 				</div>
 				<div class="product-item wow fadeIn">
@@ -153,7 +175,7 @@
 							<br>- third-party services integration;
 							<br>- from only 200 USD per server per month.
 						</p>
-						<a href="crm.html" class="btn overhead-btn">ask for quote</a>
+						<a href="en/crm.html" class="btn overhead-btn">ask for quote</a>
 					</div>
 				</div>
 				<div class="product-item wow fadeIn">
@@ -167,9 +189,9 @@
 							We will make for you a good website according to last trends and new technologies.
 							<br><br>
 							Nice selling Landing Pages, Apps and mini-quiz.
-							PHP and Java developers are also at your service. 
+							Fornt-end developers are also at your service. 
 						</p>
-						<a href="#" class="btn overhead-btn">ask for quote</a>
+						<a href="en/web-dev.html" class="btn overhead-btn">ask for quote</a>
 					</div>
 				</div>
 				<div class="product-item wow fadeIn">
@@ -182,14 +204,14 @@
 							<br><br>
 							We will find them for you by Google ads and SMM campaigns.
 						</p>
-						<a href="smm.html" class="btn overhead-btn">ask for quote</a>
+						<a href="en/smm.html" class="btn overhead-btn">ask for quote</a>
 					</div>
 				</div>
 				<div class="product-item wow fadeIn">
-					<img src="./app/img/os.jpg" alt="Linux Windows" class="product-img">
-					<img src="./app/img/os-mobile.jpg" alt="Linux Windows" class="product-img mobile">
+					<img src="./app/img/thin-client.jpg" alt="Linux Windows" class="product-img">
+					<img src="./app/img/thin-client-mobile.jpg" alt="Linux Windows" class="product-img mobile">
 					<div class="overhead">
-						<h4 class="overhead-title">Linux & Windows</h4>
+						<h4 class="overhead-title">Thin Client</h4>
 						<p class="overhead-text">
 							Decrease the risks of your Business!
 							<br>
@@ -201,7 +223,7 @@
 							<br>- user’s permissions control;
 							<br>- we support Linux, Windows based servers at top European data-centers. 
 						</p>
-						<a href="#" class="btn overhead-btn">ask for quote</a>
+						<a href="en/thin-client.html" class="btn overhead-btn">ask for quote</a>
 					</div>
 				</div>
 			</div>
@@ -218,17 +240,17 @@
 				<div class="advantages-item wow fadeIn">
 					<img src="./app/img/advantages2.svg" alt="Save money" class="advantages-img">
 					<h4 class="advantages-title">Save money</h4>
-					<p class="advantages-text">We will not only help you save money, but we will do everything possible so that you multiply them.</p>
+					<p class="advantages-text">Our products are available even for a small company. Using our product, you will accurately increase your income. And reduce the risk of losing valuable information to 0</p>
 				</div>
 				<div class="advantages-item wow fadeIn">
 					<img src="./app/img/advantages3.svg" alt="Efficiency" class="advantages-img">
 					<h4 class="advantages-title">Efficiency</h4>
-					<p class="advantages-text">We solve your problems in a short time and with maximum efficiency. Our team of professionals will do everything possible to help you.</p>
+					<p class="advantages-text">We offer a product that is used by more than 14000 companies worldwide, it has proven its reliability and efficiency. Technical support of our specialists 24/7, the provision of a remote server and its configuration, is an additional bonus</p>
 				</div>
 				<div class="advantages-item wow fadeIn">
 					<img src="./app/img/advantages4.svg" alt="Progression" class="advantages-img">
 					<h4 class="advantages-title">Progression</h4>
-					<p class="advantages-text">We will help you grow your business, we will help you make money and improve your work.</p>
+					<p class="advantages-text">Modern technology is strongly included in our life and work. This reduces personnel costs and qualitatively raises the level of business to a new stage of development. Scaling is very fast! Progressive methods of information protection will help to save the most valuable from unnecessary eyes and losses</p>
 				</div>
 			</div>
 		</div>
@@ -243,10 +265,10 @@
 
 			<div class="contacts wow fadeIn">
 				<ul class="contacts-list flex-flow-rw">
-					<li class="contacts-item">
-						<img src="./app/img/phone-icon.svg" alt="Mobile phone" class="contacts-img">
-						<span class="contacts-info">+38 (067) 672-55-12</span>
-					</li>
+<!-- 					<li class="contacts-item">
+	<img src="./app/img/phone-icon.svg" alt="Mobile phone" class="contacts-img">
+	<span class="contacts-info">+38 (067) 672-55-12</span>
+</li> -->
 					<li class="contacts-item">
 						<img src="./app/img/email-icon.svg" alt="Email" class="contacts-img">
 						<span class="contacts-info">info@softmagic.pro</span>
@@ -265,7 +287,7 @@
 	<!-- Animation -->
 	<script src="./app/js/wow.min.js"></script>
 	<script>new WOW().init();</script>
-	<script src="./app/js/jquery.maskedinput.js"></script>
 	<script src="./app/js/particles.min.js"></script>
+	<script src="./app/js/intlTelInput.min.js"></script>
 </body>
 </html>

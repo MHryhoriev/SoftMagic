@@ -1,0 +1,108 @@
+.label {
+	@include flexbox-align-center();
+	position: fixed;
+	justify-content: space-between;
+	z-index: 3;
+	background-color: $orange-color;
+	bottom: 5%;
+	left: -150px;
+	width: 190px;
+  padding: 10px;
+  cursor: pointer;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  transition: left .5s ease-in-out;
+
+  &:hover {
+  	left: 0;
+  }
+
+  &-title {
+  	text-align: center;
+  	color: $base-color;
+  	font-weight: 700;
+  	font-size: 17px;
+  }
+
+	&-img {
+		width: 40px;
+	}
+}
+
+.consultation {
+	flex-flow: column wrap;
+	display: none;
+	position: fixed;
+	z-index: 3;
+	background-color: $base-color;
+	width: 300px;
+	bottom: 12%;
+	left: 10px;
+	border-radius: 7px;
+	border: 2px solid $orange-color;
+
+	.form {
+		flex-flow: column wrap;
+
+		.form-container {
+			width: 80%;
+			margin: 4px auto;
+
+			&:not(:last-child) {
+				margin-top: 15px;
+			}
+
+			label {
+				font-size: 12px;
+				margin: 2px 15px;
+			}
+
+			&:last-child {
+				margin-bottom: 25px;
+			}
+
+			.form-item {
+				width: 100%;
+				font-size: 15px;
+				padding: 10px 0;
+				margin-top: 0;
+			}
+
+			.form-btn {
+				font-size: 20px;
+				padding: 8px;
+			}
+		}
+	}
+
+	.hr {
+		margin-bottom: 0;
+	}
+
+	&-title {
+		text-align: center;
+		background-color: $orange-color;
+		color: $base-color;
+		font-size: 17px;
+		font-weight: 700;
+		padding: 15px;
+	}
+
+	&-close {
+		position: fixed;
+    width: 30px;
+    cursor: pointer;
+    left: 320px;
+	}
+
+	&-stock {
+		text-align: center;
+    padding: 10px 0;
+    color: $orange-color;
+    font-size: 15px;
+
+    span {
+    	font-size: 20px;
+    }
+	}
+}

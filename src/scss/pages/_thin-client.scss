@@ -1,0 +1,11 @@
+.thinClient-bg {
+	background: url(../img/thin-client.jpg) no-repeat 50%;
+	box-shadow: inset 0 0 0 1000px rgba(7, 41, 64, .8);
+	background-size: cover;
+}
+
+@media only screen and(max-width: 768px) {
+  .thinClient-bg {
+    background: url(../img/thin-client-mobile.jpg) no-repeat 50%;
+  }
+}

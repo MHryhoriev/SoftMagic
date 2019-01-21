@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Vicidial</title>
+	<link rel="stylesheet" href="../app/css/intlTelInput.css">
+	<link rel="stylesheet" href="../app/css/styles.min.css">
+	<link rel="shortcut icon" href="../app/img/logo.png" type="image/png">
+	<script src="../app/js/jquery-3.3.1.min.js"></script>
+	<script src="../app/js/jquery.validate.min.js"></script>
+	<meta name="viewport" content="width=device-width" />
+
+	<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window,document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '357842338107941'); 
+		fbq('track', 'PageView');
+	</script>
+	<noscript>
+	 	<img height="1" width="1" src="https://www.facebook.com/tr?id=357842338107941&ev=PageView
+	&noscript=1"/>
+	</noscript>
+</head>
+<body>
+	<section class="header vici-bg" id="home">
+		<div class="header-panel">
+			<div class="container">
+				<div class="header-centering">
+					<div class="header-logo">
+						<a href="/" class="logo">
+							<img src="../app/img/logo.png" alt="" class="logo-img">
+							<strong class="logo-title"><span class="orange-bg">Soft</span>Magic</strong>
+						</a>
+					</div>
+					<div class="controlls">
+						<div class="langs">
+							<a href="/en/vicidial.html" class="lang-item">en</a>
+							<span>/</span>
+							<a href="/ru/vicidial.html" class="lang-item">ru</a>
+						</div>
+					</div>
+			</div>
+		</div>
+			<div class="container">
+				<div class="header-body">
+					<h1 class="header-title animated shake"><span class="orange-bg">V</span>ICIDIAL</h1>
+					<p class="header-text color-orange animated shake">Станьте как IBM или Apple</p>
+					<div class="diamond">
+						<a href="/ru/" class="diamond-link">
+							<img src="../app/img/up-arrow.svg" alt="" class="diamond-img">
+						</a>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<section class="benefits wow fadeIn">
+			<h1 class="section-title">наши преимущества</h1>
+			<p class="section-text">Почему выбирают нас и что мы можем вам предоставить</p>
+			<hr class="hr hr-orange">
+
+			<div class="benefits-body">
+				<div class="benefits-description">
+					<h3 class="benefits-title">VICIdial используется во многих различных отраслях и организациях</h3>
+					<p class="benefits-text">Вы можете найти VICIdial в использовании в тысячах различных компаний и организаций по всему миру. От банка в Японии до социального клуба в США, всевозможные организации доверяют VICIdial общаться со своими клиентами и членами. Вот небольшой список того, как организации ежедневно используют VICIdial, чтобы помочь...
+					</p>
+
+					<h3 class="benefits-title">VICIdial самый популярный контакт-центр с открытым исходным кодом</h3>
+					<p class="benefits-text">VICIdial - это самое популярное в мире решение для контакт-центра с открытым исходным кодом. С более чем 14 000 установок в более чем 100 странах мира. Экран агента доступен на 16 разных языках, с возможностью легко создавать собственные переводы. У нас есть клиенты, использующие VICIdial в колл-центрах от 5 до 500 агентов, которые обслуживают более миллиона...</p>
+
+					<h3 class="benefits-title">Входящие звонки, исходящие звонки, электронная почта и чат сайта клиента</h3>
+					<p class="benefits-text">Позвольте вашим агентам обрабатывать входящие и исходящие телефонные звонки, а также входящую электронную почту и чат клиента на одном веб-интерфейсе агента. С помощью маршрутизации на основе навыков и приоритизации очереди вы можете отправлять вызовы и электронные письма агентам, которые могут обрабатывать их наиболее эффективно. Эти агенты также могут обрабатывать исходящие вызовы, когда...</p>
+
+					<h3 class="benefits-title">VICIdial выделенный хостинг</h3>
+					<p class="benefits-text">Вы получаете свои собственные физические серверы на одном из наших хостингов. У нас есть сотни серверов в наших частных размещенных кластерах, которые мы обслуживаем только для наших размещенных служб call-центра. Мы используем только центры обработки данных уровня 3 с несколькими магистральными интернет-соединениями и решениями с резервным питанием, поэтому вы знаете, что ваша служба будет работать. Для получения дополнительной информации о VICIhost...</p>
+			</div>
+				<div class="benefits-video">
+					<img src="../app/img/play-button.svg" alt="Play" class="video-play-btn" id="play-btn" onclick="openWindow('playerWindow')">
+					<h3 class="video-title">Vicidial видео презентация</h3>
+				</div>
+		</div>
+		
+		<div class="benefits-link">
+			<p class="section-text">Если вы хотите узнать больше, нажмите на кнопку...</p>
+			<a href="https://vici.softmagic.pro/" class="btn btn-benefits dark-blue-bg">узнать больше</a>
+		</div>
+	</section>
+
+	<!-- OVERLAYER BLOCK -->
+
+	<div class="overlayer" id="playerWindow">
+		<iframe class="video-player block" id="player" src="https://www.youtube.com/embed/ipGd-WYbdDo?" frameborder="0" allowfullscreen></iframe>
+	</div>
+
+	<!-- PARTNER SECTION -->
+
+	<section class="partners wow fadeIn" id="partners">
+		<div class="container wow fadeIn">
+			<h1 class="section-title color-white">наши партнеры</h1>
+			<p class="section-text color-white">Компании, с которыми мы работаем уже много лет</p>
+			<hr class="hr hr-orange">
+	
+			<div class="partners-list">
+				<img src="../app/img/partners-vici.png" alt="" class="partners-img">
+			</div>
+		</div>
+	</section>
+
+	<!-- CALL BACK SECTION -->
+
+	<section class="call-back wow fadeIn" id="contactUs">
+		<div class="container">
+			<h1 class="section-title">Обратная связь</h1>
+			<p class="section-text">Если у вас есть какие-либо вопросы, вы можете оставить заявку и наш менеджер свяжется с вами</p>
+			<hr class="hr hr-orange">
+			<form class="form" method="POST" action="" id="formMain">
+				<div class="form-container">
+					<input type="text" class="form-item" name="name" placeholder="Имя" id="name" autocomplete="off">
+				</div>
+				<div class="form-container">
+					<input type="text" class="form-item" name="phone" placeholder="Телефон" id="phone" autocomplete="off">
+				</div>
+				<div class="form-container">
+					<input type="email" class="form-item" name="email" placeholder="Email" id="email" autocomplete="off">
+				</div>
+				<div class="form-container">
+					<input type="submit" class="form-btn" value="Отправить" onclick="AjaxFormRequest('messegeResult', 'formMain', 'send.php')" id="button">
+				</div>
+			</form>
+			<div id="messegeResult" class="overlayer mail"></div>
+		</div>
+	</section>
+
+	<footer class="footer-panel">
+				<h4 class="footer-copyright">&#169; Copyright. All right reserved.</h4>
+	</footer>
+
+	<!-- Our js file -->
+	<script src="../app/js/scripts.min.js"></script>
+	<!-- Animation -->
+	<script src="../app/js/wow.min.js"></script>
+	<script>new WOW().init();</script>
+	<script src="../app/js/particles.min.js"></script>
+	<script src="../app/js/intlTelInput.min.js"></script>
+</body>
+</html>

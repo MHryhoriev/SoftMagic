@@ -10,7 +10,8 @@
 	&-container {
 		width: 25%;
 
-		> label {
+		label {
+			position: absolute;
 			display: flex;
 			color: #d61a11;
 			margin: 10px 0;
@@ -64,18 +65,32 @@
   .form {
   	&-container {
   		width: 100%;
+
+  		&:not(:first-child) {
+  			margin-top: 25px;
+  		}
+
+  		label {
+  			margin: 5px 0;
+  			font-size: 13px;
+  		}
   	}
 
   	&-item {
   		width: 100%;
+  		margin-top: 0;
   	}
 
   	&-btn {
-  		margin: 15px auto 0;
+  		margin: 10px auto 0;
   	}
   }
 }
 
 .error {
 	border-color: #d61a11;
+}
+
+.intl-tel-input .flag-container {
+	top: 0;
 }

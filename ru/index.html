@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>SoftMagic</title>
+	<link rel="stylesheet" href="../app/css/intlTelInput.css">
+	<link rel="stylesheet" href="../app/css/styles.min.css">
+	<link rel="shortcut icon" href="../app/img/logo.png" type="image/png">
+	<script src="../app/js/jquery-3.3.1.min.js"></script>
+	<script src="../app/js/jquery.validate.min.js"></script>
+	<meta name="viewport" content="width=device-width" />
+	<meta http-equiv="Content-type" content="text/html; charset-utf-8" />
+	<meta name="keywords" content="автоматизация телефонии, автоматизация бизнеса, защита информации, комерческая информация, телефония, тонкий клиент, настройка лицензионного ПО, коммунигейт, CRM, Висидиал, Vicidial, Communigate, ERP,  SMM, Website, Mini-Quizz, удаленный сервер, виртуальный сервер" />
+
+	<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window,document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '357842338107941'); 
+		fbq('track', 'PageView');
+	</script>
+
+	<noscript>
+	 	<img height="1" width="1" src="https://www.facebook.com/tr?id=357842338107941&ev=PageView
+	&noscript=1"/>
+	</noscript>
+</head>
+
+<body>
+	<!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<div class="fb-customerchat"
+	  attribution=setup_tool
+	  page_id="745984339075092"
+	  theme_color="#ff7e29"
+	  logged_in_greeting="Приветствуем! Мы открыты к общению! Рады ответить на ваш вопрос!"
+	  logged_out_greeting="Приветствуем! Мы открыты к общению! Рады ответить на ваш вопрос!">
+	</div>
+
+	<div class="label wow fadeIn" onclick="show(this, '.consultation')">
+		<h4 class="label-title">Консультация</h4>
+		<img src="../app/img/headset.svg" alt="consultation" class="label-img">
+	</div>
+
+	<div class="consultation wow fadeIn">
+		<img src="../app/img/close-btn.svg" alt="close" class="consultation-close" onclick="hide('.consultation', '.label')">
+		<h4 class="consultation-title">Получите консультацию нашего специалиста бесплатно</h4>
+		<h4 class="consultation-stock"><span>Акция!</span> <br> Тест на 7 дней бесплатно до 5 пользователей</h4>
+		<hr class="hr hr-orange">
+		<form class="form" method="POST" action="" id="formConsultation">
+				<div class="form-container">
+					<input type="text" class="form-item" name="name" placeholder="Имя" id="name" autocomplete="off">
+				</div>
+				<div class="form-container">
+					<input type="tel" class="form-item" name="phone" id="phone" autocomplete="off">
+				</div>
+				<div class="form-container">
+					<input type="email" class="form-item" name="email" placeholder="Email" id="email" autocomplete="off">
+				</div>
+				<div class="form-container">
+					<input type="submit" class="form-btn" value="Отправить" onclick="AjaxFormRequest('formConsultation', 'consultation.php')" id="button">
+				</div>
+			</form>
+	</div>
+
+	<!-- HEADER SECTION -->
+
+	<section class="header" id="home">
+		<div class="header-panel">
+			<div class="container">
+				<div class="header-centering">
+					<div class="header-logo">
+						<a href="/ru/" class="logo">
+							<img src="../app/img/logo.png" alt="" class="logo-img">
+							<strong class="logo-title"><span class="orange-bg">Soft</span>Magic</strong>
+						</a>
+					</div>
+					<div class="controlls">
+						<!-- <div class="news">
+							<a href="/ru/" class="news-link">
+								<img src="../app/img/rss.svg" alt="News" class="news-icon">
+							</a>
+						</div> -->
+						<div class="langs">
+							<a href="/" class="lang-item">en</a>
+							<span>/</span>
+							<a href="/ru/" class="lang-item">ru</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<canvas class="background"></canvas>
+			<div class="container">
+				<div class="header-body animated pulse">
+					<h1 class="header-title"><span class="orange-bg">М</span>ы повысим эффективность управления бизнесом на 50% с помощью современных технологий</h1>
+					<p class="header-text color-orange">Бесплатная техническая поддержка</p>
+					<div id="arrow">
+						<a href="#products">
+						<img src="../app/img/double-arrow.svg" alt="Arrow" class="header-arrow" onclick="animateOnClick(this, 'bounce', 'animated')">
+					</a>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<!-- PRODUCTS SECTION -->
+
+	<section class="products" id="products">
+			<h1 class="section-title">продукты</h1>
+			<p class="section-text">Все наши продукты представлены здесь</p>
+			<hr class="hr hr-orange">
+
+			<div class="product">
+				<div class="product-item wow fadeIn">
+					<img src="../app/img/communigate.jpg" alt="Communigate" class="product-img">
+					<img src="../app/img/communigate-mobile.jpg" alt="Communigate" class="product-img mobile">
+					<div class="overhead">
+						<h4 class="overhead-title">Communigate system</h4>
+						<p class="overhead-text">
+							Как увеличить продажи и защитить всю информацию?<br>
+							Мы нашли качественное решение для бизнеса!!! 
+							Communigate - комплексное решение новых возможностей в Вашем бизнесе!
+							<br><br>
+							Настроим: 
+							<br>- электронная почта, чат, диск и звонки в одном безопасном месте  
+							<br>- Ваши данные под защитой на удаленном сервере в Европе; 
+							<br>- наши техники обеспечат техподдержку;
+							<br>- для малого и крупного предприятий — полная автоматизация от звонков до оформления покупки
+							<br>- интеграция с другими сервисами;
+							<br>- Доступно управление с любой точки мира через приложения Android и IOS;
+							<br>- Всего от 40 евро за пользователя.
+							<br>-все под контролем руководителя;
+						</p>
+						<a href="/ru/communigate.html" class="btn overhead-btn">узнать больше</a>
+					</div>
+				</div>
+				<div class="product-item wow fadeIn">
+					<img src="../app/img/visidial.jpg" alt="Visidial" class="product-img">
+					<img src="../app/img/visidial-mobile.jpg" alt="Visidial" class="product-img mobile">
+					<div class="overhead">
+						<h4 class="overhead-title">Vicidial</h4>
+						<p class="overhead-text">
+							Стань как IBM — используйте телефонию наполную и получите эффективный отдел продаж!
+							<br><br>
+							Решения для IP-телефонии:
+							<br>- входящие/исходящие звонки;
+							<br>- полная запись всех разговоров;
+							<br>- собственный сервер В Европе и полный контроль;
+							<br>- агентский контроль
+							<br>- включены отчеты и аналитика;
+							<br>- оплата от 200USD за сервер в месяц;
+							<br>- вся информация храниться в облаке;
+							<br>- нет необходимости покупать физический сервер
+							<br>- полная поддержка техподдержка нашими специалистами;
+						</p>
+						<a href="/ru/vicidial.html" class="btn overhead-btn">узнать больше</a>
+					</div>
+				</div>
+				<div class="product-item wow fadeIn">
+					<img src="../app/img/crm.jpg" alt="CRM" class="product-img">
+					<img src="../app/img/crm-mobile.jpg" alt="CRM" class="product-img mobile">
+					<div class="overhead">
+						<h4 class="overhead-title">CRM</h4>
+						<p class="overhead-text">
+							Используйте всю мощь технологий в своей работе:
+							<br><br>
+							Настроим CRM и Helpdesk:
+							<br>- Suite CRM, Vtiger, Suger CRM;
+							<br>- Служба поддержки GLPI;
+							<br>- Все в облаке — нет необходимсти в физическом сервере;
+							<br>- полная техническая поддержка;
+							<br>- возможность интеграции и миграции с другими сервисами;
+							<br>- от 200 долларов США за сервер в месяц;
+						</p>
+						<a href="/ru/crm.html" class="btn overhead-btn">узнать больше</a>
+					</div>
+				</div>
+				<div class="product-item wow fadeIn">
+					<img src="../app/img/web-dev.jpg" alt="Web development" class="product-img">
+					<img src="../app/img/web-dev-mobile.jpg" alt="Web development" class="product-img mobile">
+					<div class="overhead">
+						<h4 class="overhead-title">Web development</h4>
+						<p class="overhead-text">
+							Нужна упаковка продукта?
+							<br><br>
+							Мы сделаем для вас хороший сайт в соответствии с последними тенденциями и новыми технологиями.
+							<br><br>
+							Хорошие продажи целевых страниц, приложений и мини-квизы.
+							Разработчики Front-End также к вашим услугам. 
+						</p>
+						<a href="/ru/web-dev.html" class="btn overhead-btn">узнать больше</a>
+					</div>
+				</div>
+				<div class="product-item wow fadeIn">
+					<img src="../app/img/smm.jpg" alt="SMM" class="product-img">
+					<img src="../app/img/smm-mobile.jpg" alt="SMM" class="product-img mobile">
+					<div class="overhead">
+						<h4 class="overhead-title">SMM</h4>
+						<p class="overhead-text">
+							Клиенты потерялись в море информационного шума?
+							<br><br>
+							Найдем Ваших клиентов через настройку рекламы в Google и SMM
+						</p>
+						<a href="/ru/smm.html" class="btn overhead-btn">узнать больше</a>
+					</div>
+				</div>
+				<div class="product-item wow fadeIn">
+					<img src="../app/img/thin-client.jpg" alt="Linux Windows" class="product-img">
+					<img src="../app/img/thin-client-mobile.jpg" alt="Linux Windows" class="product-img mobile">
+					<div class="overhead">
+						<h4 class="overhead-title">Thin Client</h4>
+						<p class="overhead-text">
+							Уберите риск в Вашей компании!
+							<br>
+							Защитим коммерческую информации от посторонних и недобросовестных сотрудников!
+							<br><br>
+							<br>-полностью контролировать управление системой руководителем с любой точки мира
+							<br>-защитить всю информацию о бизнесе на удаленном носителе — выключение одной флешкой всей системы;
+							<br>- невозможность снятия информации даже сотрудниками без получения допуска
+							<br>- установка, поддержка и миграция Linux  открытого программного обеспечения
+							<br>- поддержка сервера Windows и Linux;
+							<br>- удаленный сервер в Европе
+						</p>
+						<a href="/ru/thin-client.html" class="btn overhead-btn">узнать больше</a>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<!-- ADVANTAGES SECTION -->
+
+	<section class="advantages" id="advantages">
+		<div class="container">
+			<h1 class="section-title color-white wow fadeIn">почему стоит выбрать нас</h1>
+			<hr class="hr hr-orange wow fadeIn">
+	
+			<div class="advantages-list">
+				<div class="advantages-item wow fadeIn">
+					<img src="../app/img/advantages2.svg" alt="Save money" class="advantages-img">
+					<h4 class="advantages-title">Экономия денег</h4>
+					<p class="advantages-text">Наши продукты доступны по цене даже небольшой компании. Используя наш  продукт, вы точно увеличите  свой доход. И снизите риски потери ценной информации до 0</p>
+				</div>
+				<div class="advantages-item wow fadeIn">
+					<img src="../app/img/advantages3.svg" alt="Efficiency" class="advantages-img">
+					<h4 class="advantages-title">Эффективность</h4>
+					<p class="advantages-text">Мы предлагаем продукт который используют более 14000 компаний по всему миру, он доказал свою надежность и эффективность. Техническая поддержка наших специалистов 24/7, предоставление удаленного сервера и его настройка, является дополнительным бонусом</p>
+				</div>
+				<div class="advantages-item wow fadeIn">
+					<img src="../app/img/advantages4.svg" alt="Progression" class="advantages-img">
+					<h4 class="advantages-title">Прогресс</h4>
+					<p class="advantages-text">Современные технологии прочно входят в нашу жизнь и работу. Это снижает затраты на персонал и качественно повышает уровень бизнеса на новый этап развития. Масштабирование - это очень быстро! Прогрессивные методы защиты информации помогут сохранить самое ценное от лишних глаз и потерь</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FOOTER SECTION -->
+
+	<section class="footer" id="contacts">
+		<div class="container">
+			<h1 class="section-title color-dark-blue">контакты</h1>
+			<hr class="hr hr-orange">
+
+			<div class="contacts wow fadeIn">
+				<ul class="contacts-list flex-flow-rw">
+					<li class="contacts-item">
+						<img src="../app/img/email-icon.svg" alt="Email" class="contacts-img">
+						<span class="contacts-info">info@softmagic.pro</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer-panel">
+				<h4 class="footer-copyright">&#169; Copyright. All right reserved.</h4>
+	</footer>
+
+	<!-- Our js file -->
+	<script src="../app/js/scripts.min.js"></script>
+	<!-- Animation -->
+	<script src="../app/js/wow.min.js"></script>
+	<script>new WOW().init();</script>
+	<script src="../app/js/particles.min.js"></script>
+	<script src="../app/js/intlTelInput.min.js"></script>
+</body>
+</html>

@@ -3,10 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Communigate</title>
-	<link rel="stylesheet" href="./app/css/styles.min.css">
-	<script src="app/js/jquery-3.3.1.min.js"></script>
-	<script src="app/js/jquery.validate.min.js"></script>
+	<link rel="stylesheet" href="../app/css/intlTelInput.css">
+	<link rel="stylesheet" href="../app/css/styles.min.css">
+	<link rel="shortcut icon" href="../app/img/logo.png" type="image/png">
+	<script src="../app/js/jquery-3.3.1.min.js"></script>
+	<script src="../app/js/jquery.validate.min.js"></script>
 	<meta name="viewport" content="width=device-width" />
+
+	<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window,document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '357842338107941'); 
+		fbq('track', 'PageView');
+	</script>
+	<noscript>
+	 	<img height="1" width="1" src="https://www.facebook.com/tr?id=357842338107941&ev=PageView
+	&noscript=1"/>
+	</noscript>
 </head>
 <body>
 	<section class="header communigate-bg" id="home">
@@ -14,21 +33,29 @@
 			<div class="container">
 				<div class="header-centering">
 					<div class="header-logo">
-						<a href="index.html" class="logo">
-							<img src="app/img/logo.png" alt="" class="logo-img">
+						<a href="/" class="logo">
+							<img src="../app/img/logo.png" alt="" class="logo-img">
 							<strong class="logo-title"><span class="orange-bg">Soft</span>Magic</strong>
 						</a>
 					</div>
-					<!-- <div class="back-menu">
-						<a href="index.html" class="btn btn-back">back</a>
-					</div> -->
+					<div class="controlls">
+						<div class="langs">
+							<a href="/en/communigate.html" class="lang-item">en</a>
+							<span>/</span>
+							<a href="/ru/communigate.html" class="lang-item">ru</a>
+						</div>
+					</div>
 			</div>
 		</div>
 			<div class="container">
 				<div class="header-body">
 					<h1 class="header-title animated shake"><span class="orange-bg">C</span>ommunigate</h1>
 					<p class="header-text color-orange animated shake">It's simple and easy</p>
-					<div class="diamond"><a href="index.html" class="diamond-link">&#8598;</a></div>
+					<div class="diamond">
+						<a href="/" class="diamond-link">
+							<img src="../app/img/up-arrow.svg" alt="" class="diamond-img">
+						</a>
+					</div>
 				</div>
 			</div>
 	</section>
@@ -60,19 +87,22 @@
 					<p class="benefits-text">The Contact Center application allows Enterprises to monitor and control sales, support, or other telecommunications queues in a easy Web based solution...</p>
 			</div>
 				<div class="benefits-video">
-					<img src="./app/img/play-button.svg" alt="Play" class="video-play-btn" id="play-btn" onclick="openWindow('playerWindow')">
+					<img src="../app/img/play-button.svg" alt="Play" class="video-play-btn" id="play-btn" onclick="openWindow('playerWindow')">
 					<h3 class="video-title">Communigate video presentation</h3>
-					<div class="overlayer" id="playerWindow">
-						<iframe class="video-player" id="player" src="https://www.youtube.com/embed/mDd0gcvD32k?" frameborder="0" allowfullscreen></iframe>
-					</div>
 				</div>
 		</div>
 		
-		<div class="benefits-link">
+		<!-- <div class="benefits-link">
 			<p class="section-text">If you want to know more, click on the button...</p>
 			<a href="https://www.communigate.com/" class="btn btn-benefits dark-blue-bg">more info</a>
-		</div>
+		</div> -->
 	</section>
+
+<!-- OVERLAYER BLOCK -->
+
+	<div class="overlayer" id="playerWindow">
+		<iframe class="video-player block" id="player" src="https://www.youtube.com/embed/mDd0gcvD32k?" frameborder="0" allowfullscreen></iframe>
+	</div>
 
 	<!-- PARTNER SECTION -->
 
@@ -83,7 +113,7 @@
 			<hr class="hr hr-orange">
 	
 			<div class="partners-list">
-				<img src="./app/img/partners-communigate.png" alt="" class="partners-img">
+				<img src="../app/img/partners-communigate.png" alt="" class="partners-img">
 			</div>
 		</div>
 	</section>
@@ -100,7 +130,7 @@
 					<input type="text" class="form-item" name="name" placeholder="Name" id="name" autocomplete="off">
 				</div>
 				<div class="form-container">
-					<input type="text" class="form-item" name="phone" placeholder="Phone" id="phone" autocomplete="off">
+					<input type="tel" class="form-item" name="phone" id="phone" autocomplete="off">
 				</div>
 				<div class="form-container">
 					<input type="email" class="form-item" name="email" placeholder="Email" id="email" autocomplete="off">
@@ -118,11 +148,11 @@
 	</footer>
 
 	<!-- Our js file -->
-	<script src="./app/js/scripts.min.js"></script>
+	<script src="../app/js/scripts.min.js"></script>
 	<!-- Animation -->
-	<script src="./app/js/wow.min.js"></script>
+	<script src="../app/js/wow.min.js"></script>
 	<script>new WOW().init();</script>
-	<script src="./app/js/jquery.maskedinput.js"></script>
-	<script src="./app/js/particles.min.js"></script>
+	<script src="../app/js/particles.min.js"></script>
+	<script src="../app/js/intlTelInput.min.js"></script>
 </body>
 </html>

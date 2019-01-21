@@ -1,0 +1,24 @@
+.langs {
+	font-weight: 700;
+}
+
+.lang-item {
+	color: $base-color;
+	text-transform: uppercase;
+	font-size: 18px;
+	transition: all .25s ease-in-out;
+
+	&:hover {
+		color: $orange-color;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+   .langs {
+   	font-size: 13px;
+   }
+
+   .lang-item {
+		font-size: 13px;
+	}
+}

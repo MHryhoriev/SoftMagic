@@ -2,6 +2,7 @@
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
 var minify = require('gulp-minify');
 var rename = require('gulp-rename');
@@ -17,7 +18,11 @@ gulp.task("mini-css", () => {
     return gulp.src('./src/scss/**/*.scss')
         .pipe(sass())
         .pipe(cssNano())
-        .pipe(concat('styles.min.css'))
+        .pipe(autoprefixer({
+            browsers: ['last 3 versions'],
+            cascade: false
+        }))
+        .pipe(rename('styles.min.css'))
         .pipe(gulp.dest('./app/css'));
 });
 
@@ -54,15 +59,13 @@ gulp.task('build:app', ['del', 'mini-css', 'copy-js', 'mini-js', 'mini-img'], ()
 
 /*TASK FOR DIST END*/
 
-
-
 gulp.task('serve', () => {
    browserSync.init({
        server: ''
    });
 
    gulp.watch('./src/scss/**/*.scss', ['mini-css']).on('change', browserSync.reload);
-   gulp.watch('./*.html').on('change', browserSync.reload);
+   gulp.watch('./**/*.html').on('change', browserSync.reload);
    gulp.watch('./src/img/**/*.*', ['mini-img']).on('change', browserSync.reload);
    gulp.watch('./src/js/**/*.*', ['mini-js']).on('change', browserSync.reload);
 });

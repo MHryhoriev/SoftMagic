@@ -1,0 +1,28 @@
+.diamond {
+  z-index: 1;
+  cursor: pointer;
+  background-color: $blue-color;
+  position: absolute;
+  border: 1px solid $blue-color;
+  bottom: -7.5%;
+  transform: rotate(45deg);
+  outline: none;
+
+  &:hover {
+    background-color: $orange-color;
+    border: 1px solid $blue-color;
+  }
+
+  &-img {
+    transform: rotate(-45deg);
+    width: 35px;
+    height: 35px;
+    padding: 8px 10px;
+  }
+}
+
+@media only screen and(max-width: 768px) {
+  .diamond {
+    bottom: -9.5%;
+  }
+}

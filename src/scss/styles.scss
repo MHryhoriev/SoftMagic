@@ -13,16 +13,24 @@
 @import "pages/communigate";
 @import "pages/crm";
 @import "pages/web-dev";
-@import "pages/os-install";
+@import "pages/thin-client";
 @import "pages/smm";
 
 /* OTHER */
-@import "mobile-menu";
 @import "modules";
-@import "reset";
-@import "animation";
-@import "overlayer";
-@import "mixins";
+
+/* MODULES */
+@import "modules/mobile-menu";
+@import "modules/reset";
+@import "modules/animation";
+@import "modules/overlayer";
+@import "modules/mixins";
+@import "modules/news";
+@import "modules/langs";
+@import "modules/menu";
+@import "modules/diamond";
+@import "modules/btn";
+@import "modules/consultation";
 
 body {
   font-family: ProximaNova, 'sans-serif';

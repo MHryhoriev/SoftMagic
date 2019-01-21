@@ -19,6 +19,8 @@
 	}
 
 	&-title {
+		@include flexbox-align-center();
+		justify-content: flex-start;
 		padding: 15px;
 		border-bottom: 1px solid $blue-color;
 		font-size: 15px;
@@ -30,10 +32,18 @@
 			color: $blue-color;
 		}
 
-		&:after {
-			content: '\02795';
+		&::after {
+			content: '＋';
 			color: $orange-color;
-			float: right;
+			font-size: 23px;
+			margin-left: auto;
+		}
+
+		&::before {
+			content: url(../img/point.png);
+			color: $orange-color;
+			margin-right: 5px;
+		    	margin-left: -30px;
 		}
 
 		&.active {
@@ -42,12 +52,17 @@
 		}
 		
 		&.active:after {
-			content: '\02796';
+			content: '－';
 		}
+	}
+
+	&-img {
+		width: 100%;
 	}
 
 	&-text {
 		padding: 15px;
+		font-size: 12px;
 	}
 
 	&-link {
@@ -71,6 +86,14 @@
 
 		&-body {
 			flex-direction: column;
+		}
+
+		&-title {
+			font-size: 11px;
+		}
+
+		&-text {
+			font-size: 9px;
 		}
 	}
 }

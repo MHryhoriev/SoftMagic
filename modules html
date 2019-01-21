@@ -1,0 +1,42 @@
+<!-- 					<ul class="menu" id="menuNav">
+	<li class="menu-item">
+		<a href="#home" class="menu-link">Home</a>
+	</li>
+	<li class="menu-item">
+		<a href="#products" class="menu-link">Products</a>
+	</li>
+	<li class="menu-item">
+		<a href="#advantages" class="menu-link">Advantages</a>
+	</li>
+	<li class="menu-item">
+		<a href="#contacts" class="menu-link">Contacts</a>
+	</li>
+</ul>
+	
+<label for="check-menu" class="burger" onclick="openMenu(this, 'menu-mobile')">
+  <div class="burger-bar1"></div>
+  <div class="burger-bar2"></div>
+  <div class="burger-bar3"></div>
+</label> -->
+
+
+
+<!-- 			<nav class="mobile-menu menu-hide" id="menu-mobile">
+			<ul class="mobile-menu-list">
+			  <li class="mobile-menu-item">
+			  	<a class="mobile-menu-link" href="#home">Home</a>
+			  </li>
+			  <li class="mobile-menu-item">
+			  	<a class="mobile-menu-link" href="#products">Products</a>
+			  </li>
+			  <li class="mobile-menu-item">
+			  	<a class="mobile-menu-link" href="#advantages">Advantages</a>
+			  </li>
+			  <li class="mobile-menu-item">
+			  	<a class="mobile-menu-link" href="#contacts">Contacts</a>
+			  </li>
+			</ul>  
+	</nav> -->
+
+
+<!-- <a href="#" class="btn btn-big header-btn"><span>buy now</span></a> -->

@@ -1,0 +1,38 @@
+.menu {
+  z-index: 1;
+  @include flexbox();
+  justify-content: space-between;
+  width: 40%;
+  font-size: 18px;
+  font-weight: 700;
+
+  &-link {
+    color: $base-color;
+
+    &:after {
+      @include flexbox();
+      content: "";
+      height: 2px;
+      width: 0%;
+      margin-left: 50%;
+      background-color: $base-color;
+      -webkit-transition: width .3s ease-in-out;
+      -moz--transition: width .3s ease-in-out;
+      transition: width .3s ease-in-out;
+      -webkit-transform:translateX(-50%);
+      -moz-transform:translateX(-50%);
+      transform:translateX(-50%);
+    }
+    
+    &:hover:after,
+    &:focus:after {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .menu {
+    display: none;
+  }
+}

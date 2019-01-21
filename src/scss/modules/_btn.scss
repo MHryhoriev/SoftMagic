@@ -1,0 +1,31 @@
+.btn {
+  color: $base-color;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid $base-color;
+
+  &-back {
+	padding: 10px;
+	font-size: 17px;
+	border-radius: 7px;
+	transition: all .25s ease-in-out;
+
+		&:hover {
+			background-color: $base-color;
+			color: #072940;
+		}
+	}
+
+	&-benefits {
+		padding: 15px;
+		font-size: 25px;
+		border-radius: 7px;
+		border: 2px solid #072940;
+		transition: all .25s ease-out;
+
+		&:hover {
+			background-color: $orange-color;
+			color: #072940;
+		}
+	}
+}

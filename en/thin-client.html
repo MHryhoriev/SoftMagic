@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Thin Client</title>
+	<link rel="stylesheet" href="../app/css/intlTelInput.css">
+	<link rel="stylesheet" href="../app/css/styles.min.css">
+	<link rel="shortcut icon" href="../app/img/logo.png" type="image/png">
+	<script src="../app/js/jquery-3.3.1.min.js"></script>
+	<script src="../app/js/jquery.validate.min.js"></script>
+	<meta name="viewport" content="width=device-width" />
+
+	<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window,document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '357842338107941'); 
+		fbq('track', 'PageView');
+	</script>
+	<noscript>
+	 	<img height="1" width="1" src="https://www.facebook.com/tr?id=357842338107941&ev=PageView
+	&noscript=1"/>
+	</noscript>
+</head>
+<body>
+	<section class="header thinClient-bg" id="home">
+		<div class="header-panel">
+			<div class="container">
+				<div class="header-centering">
+					<div class="header-logo">
+						<a href="/" class="logo">
+							<img src="../app/img/logo.png" alt="" class="logo-img">
+							<strong class="logo-title"><span class="orange-bg">Soft</span>Magic</strong>
+						</a>
+					</div>
+					<div class="controlls">
+						<div class="langs">
+							<a href="/en/thin-client.html" class="lang-item">en</a>
+							<span>/</span>
+							<a href="/ru/thin-client.html" class="lang-item">ru</a>
+						</div>
+					</div>
+			</div>
+		</div>
+			<div class="container">
+				<div class="header-body">
+					<h1 class="header-title animated shake"><span class="orange-bg">T</span>hin Client</h1>
+					<p class="header-text color-orange animated shake">Decrease the risks of your Business!</p>
+					<div class="diamond">
+						<a href="/" class="diamond-link">
+							<img src="../app/img/up-arrow.svg" alt="" class="diamond-img">
+						</a>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<section class="benefits wow fadeIn">
+			<h1 class="section-title">our benefits</h1>
+			<p class="section-text">Why choose us and what we can give you</p>
+			<hr class="hr hr-orange">
+
+			<div class="benefits-body">
+				<div class="benefits-description">
+					<h3 class="benefits-title">What is a Thin Client?</h3>
+					<p class="benefits-text">A Thin Client is a lightweight, fan-less computer that doesn’t have a hard drive, but connects to a server to perform its computing. Thin Clients access hard drives in the data center by running Remote Desktop Protocols (RDP), like Citrix XenDesktop or Citrix Secure Access Gateway which allow virtualized Windows desktops and applications to be delivered as on-demand services.
+					<br><br>
+					Because all applications, sensitive data, memory and programs are stored in the data center instead of on the device itself, Thin Client computing is considered a virtual desktop computing model (VDI). Centralized computing in general- and Thin Clients in particular- are better than PCs at protecting organizations from the havoc of malware. This is because even if a user does accidentally click on a malicious link, the Thin Client will not be able to spread the virus to other Thin Clients. In addition, Thin Clients that run on a Linux operating system and automatically receive recommended security updates are nearly impossible to manipulate...
+					</p>
+					<h3 class="benefits-title">Citrix XenDesktop VDI Use Thin Clients</h3>
+					<p class="benefits-text">Most Thin Clients support Citrix XenDesktop; the best Thin Clients ensure constant compatibility through a robust support that automatically updates the latest versions of ICA...</p>
+
+					<h3 class="benefits-title">Switching from a PC environment to thin clients</h3>
+					<p class="benefits-text">Many businesses make the switch to thin clients because of the savings, security and efficiency of desktop virtualization (VDI). Unlike a standard PC environment, VDI allows IT to centrally manage all endpoints. You can future proof your VDI investment by going with an endpoint management solution constantly offers the latest versions of Citrix XenDesktop, including the full integration of Citrix features, such as the Secure Access Gateway client and Citrix Secure Access Gateway...</p>
+
+					<h3 class="benefits-title">Future proofing your IT environment</h3>
+					<p class="benefits-text">When you’re switching to thin clients, look for an endpoint management system that ensures constant compatibility with Citrix XenDesktop or Horizon. You should be able to continue using your thin or zero client hardware even if you change your VDI solution...</p>
+			</div>
+				<div class="benefits-video">
+					<img src="../app/img/play-button.svg" alt="Play" class="video-play-btn" id="play-btn" onclick="openWindow('playerWindow')">
+					<h3 class="video-title">Thin client video presentation</h3>
+				</div>
+		</div>
+	</section>
+
+<!-- OVERLAYER BLOCK -->
+
+	<div class="overlayer" id="playerWindow">
+		<iframe class="video-player" id="player" src="https://www.youtube.com/embed/asvYvicwitY?" frameborder="0" allowfullscreen></iframe>
+	</div>
+
+	<!-- CALL BACK SECTION -->
+
+	<section class="call-back wow fadeIn tilt-block" id="contactUs">
+		<div class="container">
+			<h1 class="section-title">call back</h1>
+			<p class="section-text">If you have any questions, you can leave a request and our manager will contact you</p>
+			<hr class="hr hr-white">
+			<form class="form" method="POST" action="" id="formMain">
+				<div class="form-container">
+					<input type="text" class="form-item" name="name" placeholder="Name" id="name" autocomplete="off">
+				</div>
+				<div class="form-container">
+					<input type="text" class="form-item" name="phone" placeholder="Phone" id="phone" autocomplete="off">
+				</div>
+				<div class="form-container">
+					<input type="email" class="form-item" name="email" placeholder="Email" id="email" autocomplete="off">
+				</div>
+				<div class="form-container">
+					<input type="submit" class="form-btn" value="Call me" onclick="AjaxFormRequest('messegeResult', 'formMain', 'send.php')" id="button">
+				</div>
+			</form>
+			<div id="messegeResult" class="overlayer mail"></div>
+		</div>
+	</section>
+
+	<footer class="footer-panel">
+				<h4 class="footer-copyright">&#169; Copyright. All right reserved.</h4>
+	</footer>
+
+	<!-- Our js file -->
+	<script src="../app/js/scripts.min.js"></script>
+	<!-- Animation -->
+	<script src="../app/js/wow.min.js"></script>
+	<script>new WOW().init();</script>
+	<script src="../app/js/particles.min.js"></script>
+	<script src="../app/js/intlTelInput.min.js"></script>
+</body>
+</html>

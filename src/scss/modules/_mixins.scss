@@ -2,6 +2,11 @@ $base-color: #fff;
 $orange-color: #f36c00;
 $blue-color: #072940;
 
+@mixin font-size-weight($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+}
+
 @mixin flexbox() {
   display: -webkit-box;
   display: -moz-box;
@@ -31,14 +36,14 @@ $blue-color: #072940;
   padding: 0 $value;
 }
 
-@mixin media-font-size($supermax, $max, $mid, $min, $micro) {
-  font-size: $supermax;
+@mixin media-font-size($default, $max, $mid, $min, $micro) {
+  font-size: $default;
 
   @media only screen and (max-width: 1200px) {
     font-size: $max;
   }
 
-  @media only screen and (max-width: 940px) {
+  @media only screen and (max-width: 950px) {
     font-size: $mid;
   }
 

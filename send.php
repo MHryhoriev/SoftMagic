@@ -20,7 +20,7 @@ if ($_POST) {
 	$result = mail($to, $subject, $message, $headers);
   
   if ($result){
-    echo "<div class='overlayer-container'><img src='./app/img/mail.gif' class='overlayer-img'></div>";
+    echo "<div class='overlayer-container'><img src='../app/img/mail.gif' class='overlayer-img'></div>";
   }
 }
 ?>
